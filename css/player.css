@@ -1,0 +1,98 @@
+#player {
+    background: none;
+    height: 480px;
+    padding: 5px;
+    margin: 0;
+}
+
+.player-container {
+    float: left;
+    width: 55%;
+    height: 100%;
+    padding-top: 5px;
+    padding-right: 50px;
+    margin-left: 20%;
+}
+
+.player-container-side-bar {
+    width: 5%;
+    margin-left: 1%;
+    border-top-right-radius: 4em 50%;
+    border-bottom-right-radius: 4em 50%;
+
+}
+
+#player div.title-bar {
+    height: 70px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: red;
+    padding: 0px 50px;
+    margin: 15px 0px 25px -35px;
+    position: relative;
+}
+
+#player div.title-bar::after {
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: 0;
+    border-top: 35px solid darkred;
+    border-left: 35px solid transparent;
+}
+
+#player div.title-bar h1 {
+    margin-top: 15px;
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, .90);
+}
+
+#player .current-song {
+    height: 210px;
+    padding-left: 50px;
+    background: none;
+}
+
+#player .current-song-image{
+    background-size: cover;
+    background-image: url("../img/james-morrison.jpg");
+    float: left;
+    width: 35%;
+    height: 90%;
+}
+
+#player .current-song-info {
+    background: none;
+    float: left;
+    height: 90%;
+    width: 65%;
+    padding: 30px 50px;
+}
+
+#player .next-song {
+    padding-left: 50px;
+    background: none;
+}
+
+#player .next-song h1 {
+    font-size: 1.2em;
+}
+
+#player h1 {
+    font-family: lato, arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#player h2 {
+    font-family: PT sans, Arial, sans serif;
+    line-height: .2;
+    font-size: 35px;
+}
+
+#player h3 {
+    font-family: PT sans, Arial, sans serif;
+    font-weight: 300;
+    line-height: .5;
+    font-size: 30px;
+}

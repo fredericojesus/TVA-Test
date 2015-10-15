@@ -1,0 +1,64 @@
+.footer-container {
+    display: flex;
+}
+
+.footer-item {
+    flex: 1;
+    height: 100px;
+    font-family: PT sans, Arial, sans serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 30px 70px;
+}
+
+.footer-pub-divider {
+    margin: 10px 20px;
+}
+.footer-controls-divider {
+    margin: 10px 0px;
+}
+
+.pub-container {
+    display: flex;
+    text-align: center;
+}
+
+.pub-content {
+    flex: 1;
+    padding: 5px;
+}
+
+.pub-container div h3 {
+    font-size: 26px;
+}
+
+#controls {
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline-flex;
+}
+
+#controls > div {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#controls div a {
+    flex: 1;
+    margin: 35px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+#controls div a:hover{
+    color: yellow;
+}
+
+.controls-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: inline-block;
+}

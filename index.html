@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TVA Test</title>
+
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/twitter.css">
+    <link rel="stylesheet" href="css/stations-list.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:700,900|PT+Sans:400,700,400italic' rel='stylesheet'
+          type='text/css'>
+</head>
+
+<body>
+    <div id="main-container">
+        <aside class="nrj-logo"></aside>
+
+        <!-- PLAYER -->
+        <section id="player">
+            <aside class="twitter-side-tab closed">
+                <div class="twitter-side-tab-header bg-transparent">
+                    <img src="img/twitterlogo.png" class="twitter-logo"/>
+                </div>
+                <div class="twitter-side-tab-content bg-transparent">
+                    <p>
+                        <b>Consectetur</b> @consectetur<br>
+                        Magna nec lacinia volupat, diam risus congue arcu, ac posuere fellslorem vei lacus
+                    </p>
+
+                    <p>
+                        <b>Consectetur</b> @consectetur<br>
+                        Magna nec lacinia volupat, diam risus congue arcu, ac posuere fellslorem vei lacus
+                    </p>
+
+                    <p>
+                        <b>Consectetur</b> @consectetur<br>
+                        Magna nec lacinia volupat, diam risus congue arcu, ac posuere fellslorem vei lacus
+                    </p>
+
+                    <p>
+                        <b>Consectetur</b> @consectetur<br>
+                        Magna nec lacinia volupat, diam risus congue arcu, ac posuere fellslorem vei lacus
+                    </p>
+
+                    <p>
+                        <b>Consectetur</b> @consectetur<br>
+                        Magna nec lacinia volupat, diam risus congue arcu, ac posuere fellslorem vei lacus
+                    </p>
+                </div>
+
+                <div class="twitter-side-tab-handle bg-transparent">
+                    <p>
+                        t<br>
+                        w<br>
+                        i<br>
+                        t<br>
+                        t<br>
+                        e<br>
+                        r<br>
+                    </p>
+                    <span class="twitter-circle"></span>
+                </div>
+            </aside>
+
+            <div class="player-container bg-transparent">
+                <div class="title-bar">
+                    <h1>Now playing</h1>
+                </div>
+                <div>
+                    <div class="current-song">
+                        <div class="current-song-image"></div>
+                        <div class="current-song-info">
+                            <h2 class="artist-name">James Morrison</h2>
+
+                            <h3 class="song-name">I won´t let you go</h3>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="next-song">
+                        <h1>Next Song</h1>
+
+                        <h2 class="artist-name">Shakira</h2>
+
+                        <h3 class="song-name">Waka waka (This time for Africa)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="player-container player-container-side-bar bg-transparent"></div>
+        </section>
+
+        <!-- STATIONS CAROUSEL -->
+        <section id="stations-list" class="hidden">
+            <div class="stations-list-wrapper">
+
+                <div class="stations-list-container bg-transparent">
+                    <a href="previous" class="stations-list-control stations-list-control-left">
+                        <img class="stations-list-arrows" src="img/leftArrow.png"/>
+                    </a>
+                    <a href="next" class="stations-list-control stations-list-control-right">
+                        <img class="stations-list-arrows" src="img/rightArrow.png"/>
+                    </a>
+
+                    <div id="stations-list-stations">
+                        <div class="stations-list-station" name="Energy Hit Music"><img src="img/nrgi-logo.png" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy Hits 2015"><img src="img/nrj2.jpg" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy Music Awards"><img src="img/nrj3.jpg" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy Hits 2013"><img src="img/nrj4.jpg" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy Party Hits 2013"><img src="img/nrj5.jpg" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy Party 2012"><img src="img/nrj6.jpg" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy Dance 2011"><img src="img/nrj7.jpg" alt="nrj-logo"/></div>
+                        <div class="stations-list-station" name="Energy"><img src="img/nrj8.png" alt="nrj-logo"/></div>
+                    </div>
+                </div>
+
+                <div class="station-selected-divider"></div>
+                <div id="station-selected" class="bg-transparent">
+                    <span class="station-selected-text"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="footer-container">
+
+            <!-- PUB -->
+            <div class="pub-container footer-item bg-transparent rounded">
+                <div class="footer-pub-divider divider"></div>
+                <div class="pub-content">
+                    <h3>PUB in here</h3>
+                </div>
+                <div class="footer-pub-divider divider"></div>
+            </div>
+
+            <!-- CONTROLS -->
+            <div id="controls" class="footer-item bg-transparent rounded">
+                <div class="player-controls">
+                    <a style="flex: 3" href="stationsList">
+                        <span class="controls-circle"></span>
+                        View all stations
+                    </a>
+                    <div class="footer-controls-divider divider"></div>
+                    <a href="stop">Stop</a>
+                    <div class="footer-controls-divider divider"></div>
+                    <a href="close">X</a>
+
+                </div>
+
+                <div style="display: none">
+                    <a style="flex: 3" href="player">
+                        <span class="controls-circle"></span>
+                        View player
+                    </a>
+                    <div class="footer-controls-divider divider"></div>
+                    <a href="play">Play</a>
+                    <div class="footer-controls-divider divider"></div>
+                    <a href="close">X</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

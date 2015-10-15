@@ -1,0 +1,108 @@
+.twitter-side-tab {
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+
+.twitter-side-tab-header {
+    position: absolute;
+    padding: 10px 20px;
+    width: 215px;
+    top: 15px;
+    transition: transform .25s ease-out;
+    border-top-right-radius: 42px;
+}
+
+.twitter-logo {
+    width: 25px;
+}
+
+.twitter-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #5ea9dd;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.twitter-side-tab-content {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    height: 200px;
+    width: 215px;
+    padding: 5px 20px;
+    overflow-y: scroll;
+    font-family: monospace;
+    transition: transform .25s ease-out;
+}
+
+.twitter-side-tab-content::-webkit-scrollbar {
+    width: 12px;
+    right: 20px;
+}
+.twitter-side-tab-content::-webkit-scrollbar-track {
+    background-color: rgba(85, 85, 85, 0.6);
+    border-radius: 10px;
+}
+.twitter-side-tab-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #666;
+    opacity: 0;
+}
+
+.twitter-side-tab-content p {
+    font-size: 0.9em;
+}
+
+.twitter-side-tab-content b {
+    color: aqua;
+}
+
+.twitter-side-tab-handle {
+    position: absolute;
+    left: 220px;
+    text-align: center;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 5px 10px;
+    top: 65px;
+    font-family: lato, arial, sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: transform .25s ease-out;
+    cursor: pointer;
+}
+
+.twitter-side-tab-handle:hover {
+    color: #5ea9dd;
+}
+
+.twitter-side-tab-handle p {
+    margin-bottom: 8px;
+}
+
+.twitter-side-tab table{
+    table-layout: fixed;
+    text-transform: uppercase;
+}
+
+.twitter-side-tab-handle td {
+    width: 15px;
+    padding: 0 2px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.1em;
+
+}
+
+.twitter-side-tab.closed .twitter-side-tab-header{
+    transform: translateX(-220px);
+}
+.twitter-side-tab.closed .twitter-side-tab-content{
+    transform: translateX(-220px);
+}
+.twitter-side-tab.closed .twitter-side-tab-handle{
+    transform: translateX(-220px);
+}
